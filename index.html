@@ -1,1 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Jeff — Computer Science student building software, algorithms and interactive digital experiences.">
+  <title>JEFF — Computer Science / Creative Developer</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span></span></div>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader-top"><span>JF / 001</span><span>INITIALIZING</span></div>
+    <div class="loader-num">00</div>
+    <div class="loader-bar"><i></i></div>
+  </div>
+
+  <header class="nav">
+    <a class="brand magnetic" href="#top" aria-label="Back to top">JF<span>.</span></a>
+    <div class="nav-center"><span id="clock">00:00:00</span><i></i><span>PH / 2026</span></div>
+    <a class="nav-link magnetic" href="#contact">CONTACT <b>↗</b></a>
+  </header>
+
+  <main id="content">
+    <section class="hero" id="top">
+      <div class="hero-meta"><span>COMPUTER SCIENCE / STUDENT</span><span>SCROLL TO ENTER ↓</span></div>
+
+      <div class="hero-title" aria-label="Build things that move">
+        <div class="line" data-hero-line><span>BUILD</span><em>01</em></div>
+        <div class="line offset" data-hero-line><span>THINGS</span></div>
+        <div class="line" data-hero-line><span>THAT</span><em>02</em></div>
+        <div class="line offset" data-hero-line><span>MOVE.</span></div>
+      </div>
+
+      <div class="hero-orb" aria-hidden="true">
+        <div class="orb-glow"></div>
+        <div class="orb-core"></div>
+        <div class="orb-ring r1"></div>
+        <div class="orb-ring r2"></div>
+        <div class="orb-ring r3"></div>
+        <span class="orb-dot d1"></span><span class="orb-dot d2"></span><span class="orb-dot d3"></span>
+      </div>
+
+      <div class="hero-bottom">
+        <p>I turn algorithms, systems and ideas into<br>interfaces and software with intent.</p>
+        <span class="scroll-mark">↓ 01 — 04</span>
+      </div>
+    </section>
+
+    <section class="statement reveal" data-reveal="up">
+      <div class="section-index">/ 001 — PROFILE</div>
+      <div class="statement-copy">
+        <p class="eyebrow">A student. A builder. A work in progress.</p>
+        <h2 class="motion-heading">Curious about the space <span>between</span> logic and experience.</h2>
+        <p class="body-copy">I'm a Computer Science student exploring software development, algorithms, databases and interactive web experiences. I like taking technical ideas apart, understanding the system underneath, then rebuilding them into something clear and useful.</p>
+      </div>
+    </section>
+
+    <section class="projects" id="work">
+      <div class="section-head reveal" data-reveal="up">
+        <div><span class="section-index">/ 002 — SELECTED WORK</span><h2>WORK<span>.</span></h2></div>
+        <span class="mono">03 CASES / 2026</span>
+      </div>
+
+      <article class="project project-a reveal" data-reveal="up">
+        <div class="project-no">01</div>
+        <div class="project-info">
+          <div class="tags">C++ / ALGORITHMS / COMPRESSION</div>
+          <h3>Huffman<br><i>Optimization</i></h3>
+          <p>Word-level Huffman compression research focused on improving efficiency while keeping the experience lossless and understandable.</p>
+          <div class="project-foot"><span>RESEARCH PROJECT</span><span>↗</span></div>
+        </div>
+        <div class="project-visual compression" data-tilt>
+          <div class="visual-shine" aria-hidden="true"></div>
+          <div class="terminal-top"><span>HUFFMAN_CORE</span><span>● ● ●</span></div>
+          <div class="terminal-body">
+            <span class="dim">INPUT</span>
+            <strong>hello hello world</strong>
+            <div class="tree"><b>01</b><i></i><b>10</b><i></i><b>00</b></div>
+            <span class="dim">OUTPUT</span>
+            <strong class="glitch-text" data-glitch="010 010 110">010 010 110</strong>
+          </div>
+        </div>
+      </article>
+
+      <article class="project project-b reveal" data-reveal="up">
+        <div class="project-no">02</div>
+        <div class="project-info">
+          <div class="tags">JAVA / OOP / MYSQL / SWING</div>
+          <h3>Student<br><i>System</i></h3>
+          <p>A desktop management application combining object-oriented design, GUI development and database integration.</p>
+          <div class="project-foot"><span>APPLICATION</span><span>↗</span></div>
+        </div>
+        <div class="project-visual database" data-tilt>
+          <div class="visual-shine" aria-hidden="true"></div>
+          <div class="db-grid"></div>
+          <div class="db-card"><span>STUDENT_DB</span><strong>CONNECTED</strong><small>MYSQL / LOCALHOST</small></div>
+          <div class="db-card small"><span>RECORDS</span><strong>1,284</strong></div>
+          <div class="db-card small right"><span>STATUS</span><strong>ONLINE</strong></div>
+        </div>
+      </article>
+
+      <article class="project project-c reveal" data-reveal="up">
+        <div class="project-no">03</div>
+        <div class="project-info">
+          <div class="tags">JAVA / GUI / LOGIC</div>
+          <h3>Memory<br><i>Game</i></h3>
+          <p>An interactive matching game built with Java Swing, event-driven logic and a deliberately simple visual system.</p>
+          <div class="project-foot"><span>EXPERIMENT</span><span>↗</span></div>
+        </div>
+        <div class="project-visual memory" data-tilt>
+          <div class="visual-shine" aria-hidden="true"></div>
+          <div class="cards">
+            <div class="card flipped">AL</div><div class="card">?</div><div class="card">?</div>
+            <div class="card flipped">GO</div><div class="card">?</div><div class="card">?</div>
+          </div>
+          <span class="memory-status">MATCH / 02 — 06</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="skills reveal" data-reveal="up">
+      <div class="section-index">/ 003 — TOOLKIT</div>
+      <div class="skill-intro"><h2>THE<br><span>STACK</span></h2><p>Tools are just tools.<br>Understanding comes first.</p></div>
+      <div class="marquee" aria-label="Technology stack">
+        <div class="marquee-track">
+          <span>C++　 JAVA　 HTML / CSS　 JAVASCRIPT　 MYSQL　</span>
+          <span aria-hidden="true">C++　 JAVA　 HTML / CSS　 JAVASCRIPT　 MYSQL　</span>
+        </div>
+      </div>
+      <div class="skill-grid">
+        <div class="skill-card"><span>01</span><h3>C++</h3><p>Programming Language</p></div>
+        <div class="skill-card"><span>02</span><h3>JAVA</h3><p>Programming Language</p></div>
+        <div class="skill-card"><span>03</span><h3>HTML / CSS</h3><p>Frontend Development</p></div>
+        <div class="skill-card"><span>04</span><h3>JAVASCRIPT</h3><p>Web Development</p></div>
+        <div class="skill-card"><span>05</span><h3>MYSQL</h3><p>Database</p></div>
+      </div>
+    </section>
+
+    <section class="closing reveal" data-reveal="up">
+      <span class="section-index">/ 004 — NEXT</span>
+      <div class="closing-title"><span>STILL</span><span>LEARNING.</span><span>STILL</span><span>BUILDING.</span></div>
+      <p>Currently exploring cybersecurity, advanced web development and better ways to turn technical concepts into experiences people can actually use.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-index">/ 005 — CONTACT</div>
+      <h2>LET'S MAKE<br><i>SOMETHING.</i></h2>
+      <div class="contact-row">
+        <a class="contact-link magnetic" href="mailto:your@email.com"><span class="link-label">EMAIL</span><span>↗</span></a>
+        <a class="contact-link magnetic" href="#" aria-label="GitHub placeholder"><span class="link-label">GITHUB</span><span>↗</span></a>
+        <a class="contact-link magnetic" href="#" aria-label="LinkedIn placeholder"><span class="link-label">LINKEDIN</span><span>↗</span></a>
+      </div>
+      <footer><span>JEFF BONIOR</span><span>COMPUTER SCIENCE / PHILIPPINES</span><span>© 2026</span></footer>
+    </section>
+  </main>
+
+  <!-- Motion stack: Lenis (smooth scrolling) + Anime.js (micro-interactions/reveals). -->
+  <script defer src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/animejs@4.5.0/dist/bundles/anime.umd.min.js"></script>
+  <script defer src="script.js"></script>
+</body>
+</html>
